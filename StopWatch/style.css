@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('bc.gif');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes sure the background stays in place when scrolling */
+}
+
+.stopwatch-container {
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a transparent dark background to make content visible */
+    padding: 20px;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#time-display {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.lap-times {
+    margin-top: 20px;
+}
+
+.lap-times ul {
+    list-style: none;
+    padding: 0;
+}
