@@ -1,0 +1,79 @@
+@media(max-width:1199px) {
+    .section .cotainer{
+        padding-top: 70px;
+    }
+    .aside {
+        left: -270px;
+    }
+    .aside.open{
+        left:0;
+    }
+   .aside .nav-toggler {
+    display: flex;
+    left: 30px;
+   }
+   .aside .nav-toggler.open {
+    left: 300px;
+   }
+   .section{
+    left: 0;
+   }
+.section.open{
+    left: 270px;
+}
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:991px) {
+
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+
+    .Home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .Home .home-img {
+        display: block;
+    }
+}
+
+@media(max-width:767px) {
+
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .education,
+    .about .about-content .experience,
+    .about .about-content .skills,
+    .about .about-content .personal-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home-img::after {
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        align-content: start;
+        
+        border-bottom: 10px solid var(--skin-color);
+        border-right: 10px solid var(--skin-color);
+        right: -60px;
+        bottom: -40px;
+    }
+
+
+
+}
